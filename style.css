@@ -1,0 +1,282 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+li{
+    list-style: none;
+    color:black;
+    font-weight: 500;
+}
+.container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    width: 75%;
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    box-shadow: 6px 4px 6px rgb(0, 0, 0);
+    background-image: linear-gradient(to left,#0F2027,#203A43,#2C5364);   
+}
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    color: #000000;
+    
+}
+
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem auto;
+    font-size: x-large;
+    border: 2px solid black;
+    background-color: rgb(59, 181, 166);
+    padding: .5rem;
+    width: 50rem;
+    height: 80%;
+    color: white;
+    border-top-right-radius: 3.5rem;
+    border-bottom-right-radius: 3.5rem;
+    
+}
+.header{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    color: #000000;
+    
+}
+.title p{
+    font-size: x-large;
+    font-weight: 500;
+}
+
+@media (min-width: 451px) and (max-width: 1040px) {
+    .title{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem auto;
+        font-size: large;
+        border: 2px solid black;
+        background-color: rgb(59, 181, 166);
+        padding: .5rem;
+        width: 30rem;
+        height: 50%;
+        color: white;
+        border-top-right-radius: 3.5rem;
+        border-bottom-right-radius: 3.5rem;
+        
+    }
+    input[type='button']{
+        font-size: large;
+        font-weight: 500;
+        font-family: cursive;
+        cursor: pointer;
+        border-radius: 1rem;
+        padding: .5rem;
+        background-color: #7fffff;
+    }
+    .title p{
+        font-size: large;
+        font-weight: 500;
+    }
+
+}
+
+
+.BtnHead{
+    margin-top: 2rem;
+}
+input[type='button']{
+    font-size: large;
+    font-weight: 500;
+    font-family: cursive;
+    cursor: pointer;
+    border-radius: 1rem;
+    padding: .5rem;
+    background-color: #7fffff;
+}
+input[type='button']:hover{
+    
+    color:#000000 ;
+    font-weight: 1000;
+    border: 5px solid #7fffff;
+}
+
+
+
+.main{
+    display: flex;
+    grid-template-rows: 2;
+    grid-template-columns: 2;
+    width: 100%;
+    line-height: 2rem;
+    /* flex-wrap: wrap; */
+    margin-top: 2rem;
+    color: #000000;
+
+}
+#contact{
+    width: 20%;
+    margin-left: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: .5rem;
+    color: #ffffff;   
+}
+.exp{
+    width: 60%;
+    border-left: 2px solid black;
+    padding-left: 1rem;
+    color: #ffffff;
+    font-size: larger;
+}
+
+@media (max-width:1025px) {
+    .main{
+        flex-wrap: wrap;
+        
+    }
+    .header{
+       color: #000000;
+    }
+    .field{
+        color: #000000;
+    }
+    #contact{
+        font-size: larger;
+        width: 100%;
+        color: white;
+    }
+    .exp{
+        width: 100%;
+        border-left: none;
+        border-top: 2px solid white;
+        font-size: larger;
+        color: #000000;
+    }
+  
+}
+
+button{
+    color: #000000;
+    background-color: rgb(30, 183, 160);
+    width: 8rem;
+    height: 2.8rem;
+    border-radius: 1rem;
+    margin-bottom: 5px auto;
+    font-weight: 900;
+    
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+button:hover{
+    color:rgb(30, 183, 160);
+    background-color: #ffffff;
+    width: 9rem;
+    height: 3rem;
+    margin-bottom: 5px auto;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: cursive;
+
+}
+@media (max-width: 650px){
+    .title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 1rem;
+        margin-top: 4rem;
+        border: 2px solid black;
+        background-color: rgb(59, 181, 166);
+        padding: 1rem;
+        width: 14.5rem;
+        height: 42%;
+        color: #000000;
+        
+    }
+    .title p{
+        font-size: large;
+    }
+    h1{
+        font-size: larger;
+    }
+    input[type='button']{
+        font-size: small;
+        
+        background-color: #7fffff;
+    }
+    .BtnHead{
+        
+      margin-top: .5rem;  
+        
+    }
+    input[type='button']:hover{
+    
+        color:#000000 ;
+        border: 5px solid #7fffff;
+    }
+    
+}
+@media print {
+    /* Set the overall background to white and text to black */
+    body {
+        background-color: white !important; /* White background */
+        color: black !important; /* Black text */
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Make sure all child elements have black text and no background color */
+    * {
+        background-color: white !important; /* White background */
+        color: black !important; /* Black text */
+        border: none !important; /* Remove borders */
+        box-shadow: none !important; /* Remove shadows */
+    }
+
+    /* Hide interactive elements that aren't needed for print (like buttons) */
+    input[type='button'],
+    button,
+    .btn {
+        display: none !important; /* Hide buttons */
+    }
+
+    /* Ensure the container takes up full width for the print layout */
+    .container {
+        width: 100% !important;
+        margin: 0;
+    }
+
+    /* Title styling */
+    .title {
+        background-color: white !important;
+        color: black !important; /* Title text color */
+    }
+
+    /* Ensure all text is black for headers, paragraphs, and list items */
+    h1, h2, p, li {
+        color: black !important;
+    }
+
+    /* Remove any link styling */
+    a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+}
+
